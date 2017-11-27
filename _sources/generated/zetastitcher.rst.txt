@@ -1,0 +1,28 @@
+zetastitcher package
+====================
+
+.. automodule:: zetastitcher
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+
+    zetastitcher.fuser
+
+Submodules
+----------
+
+.. toctree::
+
+   zetastitcher.ffmpeg_wrapper
+   zetastitcher.filematrix
+   zetastitcher.inputfile
+   zetastitcher.normxcorr
+   zetastitcher.runner
+   zetastitcher.tiffwrapper
+   zetastitcher.version
+

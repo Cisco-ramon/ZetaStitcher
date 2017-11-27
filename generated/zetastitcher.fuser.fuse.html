@@ -1,0 +1,283 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>zetastitcher.fuser.fuse module &mdash; ZetaStitcher 0.3.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="ZetaStitcher 0.3.1 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ZetaStitcher
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.3.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">zetastitcher.fuser.fuse module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ZetaStitcher</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>zetastitcher.fuser.fuse module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generated/zetastitcher.fuser.fuse.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-zetastitcher.fuser.fuse">
+<span id="zetastitcher-fuser-fuse-module"></span><h1>zetastitcher.fuser.fuse module<a class="headerlink" href="#module-zetastitcher.fuser.fuse" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="zetastitcher.fuser.fuse.flatten">
+<code class="descclassname">zetastitcher.fuser.fuse.</code><code class="descname">flatten</code><span class="sig-paren">(</span><em>my_list</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.fuser.fuse.flatten" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="zetastitcher.fuser.fuse.fuse_queue">
+<code class="descclassname">zetastitcher.fuser.fuse.</code><code class="descname">fuse_queue</code><span class="sig-paren">(</span><em>q</em>, <em>dest</em>, <em>frame_shape</em>, <em>debug=False</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.fuser.fuse.fuse_queue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fuse a queue of images along Y, optionally applying padding.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>q</strong> : <a class="reference external" href="https://docs.python.org/3/library/queue.html#queue.Queue" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">queue.Queue</span></code></a></p>
+<blockquote>
+<div><p>A queue containing elements in the form <code class="docutils literal"><span class="pre">[hyperslice,</span> <span class="pre">index,</span> <span class="pre">zfrom,</span>
+<span class="pre">offset_idx,</span> <span class="pre">top_left,</span> <span class="pre">overlaps]</span></code> where <code class="xref any docutils literal"><span class="pre">hyperslice</span></code> is a
+<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.13)"><code class="xref any docutils literal"><span class="pre">numpy.ndarray</span></code></a>, <code class="xref any docutils literal"><span class="pre">index</span></code> and <code class="xref any docutils literal"><span class="pre">zfrom</span></code> are the tile index in the
+pandas dataframe and the starting frame in the original stack (these
+two are used for debugging purposes only), <code class="xref any docutils literal"><span class="pre">offset_idx</span></code> is a
+tuple of <a class="reference external" href="https://docs.python.org/3/library/functions.html#slice" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">slice</span></code></a> objects with the slice offset inside a single
+stack, <code class="xref any docutils literal"><span class="pre">top_left</span></code> is a list specifying the image position in the form
+<code class="docutils literal"><span class="pre">[Z,</span> <span class="pre">Y,</span> <span class="pre">X]</span></code>, <a class="reference internal" href="zetastitcher.fuser.overlaps.html#module-zetastitcher.fuser.overlaps" title="zetastitcher.fuser.overlaps"><code class="xref any py py-mod docutils literal"><span class="pre">overlaps</span></code></a> is a <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v0.21.0)"><code class="xref py py-class docutils literal"><span class="pre">pandas.DataFrame</span></code></a> specifying
+overlaps with adjacent tiles.</p>
+</div></blockquote>
+<p><strong>frame_shape</strong> : tuple</p>
+<blockquote>
+<div><p>Shape of a stack plane (XY).</p>
+</div></blockquote>
+<p><strong>dest</strong> : <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.13)"><code class="xref py py-class docutils literal"><span class="pre">numpy.ndarray</span></code></a></p>
+<blockquote>
+<div><p>Destination array.</p>
+</div></blockquote>
+<p><strong>debug: bool</strong></p>
+<blockquote class="last">
+<div><p>Whether to overlay debug information (tile edges and numbers).</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zetastitcher.fuser.fuse.overlay_debug">
+<code class="descclassname">zetastitcher.fuser.fuse.</code><code class="descname">overlay_debug</code><span class="sig-paren">(</span><em>slice</em>, <em>index</em>, <em>z_from</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.fuser.fuse.overlay_debug" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="zetastitcher.fuser.fuse.squircle_alpha">
+<code class="descclassname">zetastitcher.fuser.fuse.</code><code class="descname">squircle_alpha</code><a class="headerlink" href="#zetastitcher.fuser.fuse.squircle_alpha" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="zetastitcher.fuser.fuse.to_dtype">
+<code class="descclassname">zetastitcher.fuser.fuse.</code><code class="descname">to_dtype</code><span class="sig-paren">(</span><em>x</em>, <em>dtype</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.fuser.fuse.to_dtype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Giacomo Mazzamuto.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.3.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://docs.python.org/3/_static/copybutton.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

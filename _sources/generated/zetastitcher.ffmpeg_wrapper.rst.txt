@@ -1,0 +1,7 @@
+zetastitcher.ffmpeg_wrapper module
+==================================
+
+.. automodule:: zetastitcher.ffmpeg_wrapper
+    :members:
+    :undoc-members:
+    :show-inheritance:

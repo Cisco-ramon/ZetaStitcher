@@ -1,0 +1,7 @@
+zetastitcher.tiffwrapper module
+===============================
+
+.. automodule:: zetastitcher.tiffwrapper
+    :members:
+    :undoc-members:
+    :show-inheritance:

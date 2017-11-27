@@ -1,0 +1,321 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>zetastitcher.ffmpeg_wrapper module &mdash; ZetaStitcher 0.3.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="ZetaStitcher 0.3.1 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ZetaStitcher
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.3.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">zetastitcher.ffmpeg_wrapper module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ZetaStitcher</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>zetastitcher.ffmpeg_wrapper module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generated/zetastitcher.ffmpeg_wrapper.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-zetastitcher.ffmpeg_wrapper">
+<span id="zetastitcher-ffmpeg-wrapper-module"></span><h1>zetastitcher.ffmpeg_wrapper module<a class="headerlink" href="#module-zetastitcher.ffmpeg_wrapper" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper">
+<em class="property">class </em><code class="descclassname">zetastitcher.ffmpeg_wrapper.</code><code class="descname">FFMPEGWrapper</code><span class="sig-paren">(</span><em>file_name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p class="rubric">Attributes</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.dtype" title="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.dtype"><code class="xref py py-obj docutils literal"><span class="pre">dtype</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.nchannels" title="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.nchannels"><code class="xref py py-obj docutils literal"><span class="pre">nchannels</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.nfrms" title="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.nfrms"><code class="xref py py-obj docutils literal"><span class="pre">nfrms</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.pix_fmt" title="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.pix_fmt"><code class="xref py py-obj docutils literal"><span class="pre">pix_fmt</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.shape" title="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.shape"><code class="xref py py-obj docutils literal"><span class="pre">shape</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.xsize" title="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.xsize"><code class="xref py py-obj docutils literal"><span class="pre">xsize</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.ysize" title="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.ysize"><code class="xref py py-obj docutils literal"><span class="pre">ysize</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.open" title="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.open"><code class="xref py py-obj docutils literal"><span class="pre">open</span></code></a>([file_name])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.zslice" title="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.zslice"><code class="xref py py-obj docutils literal"><span class="pre">zslice</span></code></a>(start_frame[,&nbsp;end_frame,&nbsp;dtype,&nbsp;copy])</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.dtype">
+<code class="descname">dtype</code><a class="headerlink" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.dtype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.nchannels">
+<code class="descname">nchannels</code><a class="headerlink" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.nchannels" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.nfrms">
+<code class="descname">nfrms</code><a class="headerlink" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.nfrms" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.open">
+<code class="descname">open</code><span class="sig-paren">(</span><em>file_name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.open" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.pix_fmt">
+<code class="descname">pix_fmt</code><a class="headerlink" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.pix_fmt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.shape">
+<code class="descname">shape</code><a class="headerlink" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.shape" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.xsize">
+<code class="descname">xsize</code><a class="headerlink" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.xsize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.ysize">
+<code class="descname">ysize</code><a class="headerlink" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.ysize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.zslice">
+<code class="descname">zslice</code><span class="sig-paren">(</span><em>start_frame</em>, <em>end_frame=None</em>, <em>dtype=None</em>, <em>copy=True</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.zslice" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Giacomo Mazzamuto.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.3.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://docs.python.org/3/_static/copybutton.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

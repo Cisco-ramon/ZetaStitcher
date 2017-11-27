@@ -1,0 +1,7 @@
+zetastitcher.filematrix module
+==============================
+
+.. automodule:: zetastitcher.filematrix
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,22 @@
+zetastitcher.fuser package
+==========================
+
+.. automodule:: zetastitcher.fuser
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+
+   zetastitcher.fuser.absolute_positions
+   zetastitcher.fuser.fuse
+   zetastitcher.fuser.fuse_runner
+   zetastitcher.fuser.global_optimization
+   zetastitcher.fuser.lcd_numbers
+   zetastitcher.fuser.overlaps
+   zetastitcher.fuser.virtual_fused_volume
+   zetastitcher.fuser.xcorr_filematrix
+

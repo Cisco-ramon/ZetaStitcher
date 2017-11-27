@@ -1,0 +1,7 @@
+zetastitcher.runner module
+==========================
+
+.. automodule:: zetastitcher.runner
+    :members:
+    :undoc-members:
+    :show-inheritance:
