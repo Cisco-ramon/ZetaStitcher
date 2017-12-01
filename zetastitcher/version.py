@@ -4,7 +4,7 @@ micro = 2
 
 pre_release = ''
 post_release = ''
-dev_release = ''
+dev_release = '0'
 
 __version__ = ''
 
