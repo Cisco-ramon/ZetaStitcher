@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Tutorial &mdash; ZetaStitcher 0.3.1 documentation</title>
+  <title>Tutorial &mdash; ZetaStitcher 0.3.3 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ZetaStitcher 0.3.1 documentation" href="index.html"/> 
+    <link rel="top" title="ZetaStitcher 0.3.3 documentation" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                0.3.1
+                0.3.3
               </div>
             
           
@@ -191,7 +191,7 @@ the stacks are positioned at their nominal <em>stage</em> coordinates as specifi
 the file names, i.e. we skip step 1 altogether for the moment. Open a terminal
 and <code class="docutils literal"><span class="pre">cd</span></code> to the directory containing your collection of files. Then run the
 following command:</p>
-<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="n">stitch</span><span class="o">-</span><span class="n">fuse</span> <span class="o">-</span><span class="n">s</span> <span class="o">--</span><span class="n">px</span><span class="o">-</span><span class="n">size</span><span class="o">-</span><span class="n">xy</span> <span class="mf">0.5</span> <span class="o">--</span><span class="n">px</span><span class="o">-</span><span class="n">size</span><span class="o">-</span><span class="n">z</span> <span class="mi">2</span> <span class="o">-</span><span class="n">o</span> <span class="n">nominal200</span><span class="o">.</span><span class="n">tiff</span> <span class="o">--</span><span class="n">zmin</span> <span class="mi">200</span> <span class="o">--</span><span class="n">zmax</span> <span class="mi">202</span> <span class="o">.</span>
+<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="n">stitch</span><span class="o">-</span><span class="n">fuse</span> <span class="o">-</span><span class="n">s</span> <span class="o">--</span><span class="n">px</span><span class="o">-</span><span class="n">size</span><span class="o">-</span><span class="n">xy</span> <span class="mf">0.5</span> <span class="o">--</span><span class="n">px</span><span class="o">-</span><span class="n">size</span><span class="o">-</span><span class="n">z</span> <span class="mi">2</span> <span class="o">-</span><span class="n">o</span> <span class="n">nominal200</span><span class="o">.</span><span class="n">tiff</span> <span class="o">--</span><span class="n">zmin</span> <span class="mi">200</span> <span class="o">--</span><span class="n">nz</span> <span class="mi">1</span> <span class="o">.</span>
 </pre></div>
 </div>
 <p>Let&#8217;s break down the options used in the command above. The <code class="docutils literal"><span class="pre">-s</span></code> option tells
@@ -205,13 +205,13 @@ increasing <code class="docutils literal"><span class="pre">X</span></code> and 
 your translational stage are inverted), use options <code class="docutils literal"><span class="pre">--iX</span></code> and <code class="docutils literal"><span class="pre">--iY</span></code> to
 specify axis inversion. We then specify an output file name using the <code class="docutils literal"><span class="pre">-o</span></code>
 option. Finally, for this testing run, we don&#8217;t want to produce the whole
-output stack. We therefore limit the output between 200 and 202 um
-(noninclusivee) using the <code class="docutils literal"><span class="pre">--zmin</span></code> and <code class="docutils literal"><span class="pre">-zmax</span></code> options. Since we have
-specified a voxel size of 2 along Z, the output image will contain one frame
-only (i.e. we are producing a 2D image). Note the trailing dot in the command
-line: that&#8217;s the path to the directory containing the input stacks (in this
-case, that means the current directory). You can now inspect the result of this
-<em>nominal stitching</em>.</p>
+output stack. We therefore limit the output to one frame (<code class="docutils literal"><span class="pre">--nz</span></code>) starting at
+200 um (<code class="docutils literal"><span class="pre">--zmin</span></code>). Since we have specified a voxel size of 2 along Z, the
+output image will contain one frame only (i.e. we are producing a 2D image).
+Note the trailing dot in the command line: that&#8217;s the path to the directory
+containing the input stacks (in this case, that means the current directory).</p>
+<blockquote>
+<div>You can now inspect the result of this <em>nominal stitching</em>.</div></blockquote>
 </div>
 <div class="section" id="global-optimal-alignment-and-fusion">
 <h2>Global optimal alignment and fusion<a class="headerlink" href="#global-optimal-alignment-and-fusion" title="Permalink to this headline">¶</a></h2>
@@ -244,7 +244,7 @@ in the command line is again the path to the current directory.</p>
 <p>The command above prints some progress information and creates a file named
 <code class="docutils literal"><span class="pre">stitch.yml</span></code> in the current directory. We now want to inspect the result of
 the alignment by taking a look at a fused frame:</p>
-<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="n">stitch</span><span class="o">-</span><span class="n">fuse</span> <span class="o">-</span><span class="n">o</span> <span class="n">test200</span><span class="o">.</span><span class="n">tiff</span> <span class="o">--</span><span class="n">zmin</span> <span class="mi">200</span> <span class="o">--</span><span class="n">zmax</span> <span class="mi">202</span> <span class="o">.</span>
+<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="n">stitch</span><span class="o">-</span><span class="n">fuse</span> <span class="o">-</span><span class="n">o</span> <span class="n">test200</span><span class="o">.</span><span class="n">tiff</span> <span class="o">--</span><span class="n">zmin</span> <span class="mi">200</span> <span class="o">--</span><span class="n">nz</span> <span class="mi">1</span> <span class="o">.</span>
 </pre></div>
 </div>
 <p>This will save the frame located at a depth of 200um in the stack to a file
@@ -315,7 +315,7 @@ you like. If you want to save the subvolume to a tiff file:</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.3.1',
+            VERSION:'0.3.3',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
