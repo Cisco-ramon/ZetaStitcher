@@ -88,11 +88,12 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">zetastitcher.filematrix module</a></li>
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module_index.html">Module reference</a></li>
 </ul>
-</div>
+
             
           
         </div>
@@ -160,7 +161,7 @@
 <dl class="class">
 <dt id="zetastitcher.filematrix.FileMatrix">
 <em class="property">class </em><code class="descclassname">zetastitcher.filematrix.</code><code class="descname">FileMatrix</code><span class="sig-paren">(</span><em>input_path=None</em>, <em>ascending_tiles_x=True</em>, <em>ascending_tiles_y=True</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.filematrix.FileMatrix" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.6)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>Data structures for a matrix of input files.</p>
 <p class="rubric">Attributes</p>
 <table border="1" class="longtable docutils">
@@ -215,7 +216,7 @@
 <td></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#zetastitcher.filematrix.FileMatrix.load_dir" title="zetastitcher.filematrix.FileMatrix.load_dir"><code class="xref py py-obj docutils literal"><span class="pre">load_dir</span></code></a>([dir])</td>
-<td>Look for files in <a class="reference external" href="https://docs.python.org/3/library/functions.html#dir" title="(in Python v3.6)"><code class="xref any docutils literal"><span class="pre">dir</span></code></a> recursively and populate data structures.</td>
+<td>Look for files in <a class="reference external" href="https://docs.python.org/3/library/functions.html#dir" title="(in Python v3.7)"><code class="xref any docutils literal"><span class="pre">dir</span></code></a> recursively and populate data structures.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.filematrix.FileMatrix.load_yaml" title="zetastitcher.filematrix.FileMatrix.load_yaml"><code class="xref py py-obj docutils literal"><span class="pre">load_yaml</span></code></a>(fname)</td>
 <td></td>
@@ -259,7 +260,7 @@
 <dl class="attribute">
 <dt id="zetastitcher.filematrix.FileMatrix.data_frame">
 <code class="descname">data_frame</code><em class="property"> = None</em><a class="headerlink" href="#zetastitcher.filematrix.FileMatrix.data_frame" title="Permalink to this definition">¶</a></dt>
-<dd><p>A <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v0.21.0)"><code class="xref py py-class docutils literal"><span class="pre">pandas.DataFrame</span></code></a> object. Contains the following
+<dd><p>A <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v0.23.4)"><code class="xref py py-class docutils literal"><span class="pre">pandas.DataFrame</span></code></a> object. Contains the following
 columns: <code class="xref any docutils literal"><span class="pre">X</span></code>, <code class="xref any docutils literal"><span class="pre">Y</span></code>, <code class="xref any docutils literal"><span class="pre">Z</span></code>, <code class="xref any docutils literal"><span class="pre">Z_end</span></code>, <a class="reference internal" href="zetastitcher.tiffwrapper.html#zetastitcher.tiffwrapper.TiffWrapper.xsize" title="zetastitcher.tiffwrapper.TiffWrapper.xsize"><code class="xref any py py-attr docutils literal"><span class="pre">xsize</span></code></a>, <a class="reference internal" href="zetastitcher.ffmpeg_wrapper.html#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.ysize" title="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.ysize"><code class="xref any py py-attr docutils literal"><span class="pre">ysize</span></code></a>, <a class="reference internal" href="zetastitcher.ffmpeg_wrapper.html#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.nfrms" title="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.nfrms"><code class="xref any py py-attr docutils literal"><span class="pre">nfrms</span></code></a>,
 <code class="xref any docutils literal"><span class="pre">filename</span></code>.</p>
 </dd></dl>
@@ -282,7 +283,7 @@ columns: <code class="xref any docutils literal"><span class="pre">X</span></cod
 <dl class="method">
 <dt id="zetastitcher.filematrix.FileMatrix.load_dir">
 <code class="descname">load_dir</code><span class="sig-paren">(</span><em>dir=None</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.filematrix.FileMatrix.load_dir" title="Permalink to this definition">¶</a></dt>
-<dd><p>Look for files in <a class="reference external" href="https://docs.python.org/3/library/functions.html#dir" title="(in Python v3.6)"><code class="xref any docutils literal"><span class="pre">dir</span></code></a> recursively and populate data structures.</p>
+<dd><p>Look for files in <a class="reference external" href="https://docs.python.org/3/library/functions.html#dir" title="(in Python v3.7)"><code class="xref any docutils literal"><span class="pre">dir</span></code></a> recursively and populate data structures.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -342,7 +343,7 @@ tuple: <code class="code docutils literal"><span class="pre">(['Z',</span> <span
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Yields:</th><td class="field-body"><p class="first"><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v0.21.0)"><code class="xref py py-class docutils literal"><span class="pre">pandas.DataFrame</span></code></a></p>
+<tr class="field-odd field"><th class="field-name">Yields:</th><td class="field-body"><p class="first"><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v0.23.4)"><code class="xref py py-class docutils literal"><span class="pre">pandas.DataFrame</span></code></a></p>
 <blockquote class="last">
 <div><p>A group of tiles</p>
 </div></blockquote>
@@ -362,7 +363,7 @@ tuple: <code class="code docutils literal"><span class="pre">(['Z',</span> <span
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Yields:</th><td class="field-body"><p class="first"><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v0.21.0)"><code class="xref py py-class docutils literal"><span class="pre">pandas.DataFrame</span></code></a></p>
+<tr class="field-odd field"><th class="field-name">Yields:</th><td class="field-body"><p class="first"><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v0.23.4)"><code class="xref py py-class docutils literal"><span class="pre">pandas.DataFrame</span></code></a></p>
 <blockquote class="last">
 <div><p>A group of tiles</p>
 </div></blockquote>
@@ -379,7 +380,7 @@ tuple: <code class="code docutils literal"><span class="pre">(['Z',</span> <span
 <dl class="docutils">
 <dt>You need to send to this generator a tuple containing:</dt>
 <dd><ul class="first last simple">
-<li>a list for sorting the <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v0.21.0)"><code class="xref py py-class docutils literal"><span class="pre">pandas.DataFrame</span></code></a>, such as             <code class="code docutils literal"><span class="pre">['Z',</span> <span class="pre">'Y',</span> <span class="pre">'X']</span></code></li>
+<li>a list for sorting the <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v0.23.4)"><code class="xref py py-class docutils literal"><span class="pre">pandas.DataFrame</span></code></a>, such as             <code class="code docutils literal"><span class="pre">['Z',</span> <span class="pre">'Y',</span> <span class="pre">'X']</span></code></li>
 <li>an axis for grouping, such as <code class="code docutils literal"><span class="pre">'Y'</span></code></li>
 </ul>
 </dd>
@@ -388,7 +389,7 @@ tuple: <code class="code docutils literal"><span class="pre">(['Z',</span> <span
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Yields:</th><td class="field-body"><p class="first"><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v0.21.0)"><code class="xref py py-class docutils literal"><span class="pre">pandas.DataFrame</span></code></a></p>
+<tr class="field-odd field"><th class="field-name">Yields:</th><td class="field-body"><p class="first"><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v0.23.4)"><code class="xref py py-class docutils literal"><span class="pre">pandas.DataFrame</span></code></a></p>
 <blockquote class="last">
 <div><p>A group of tiles</p>
 </div></blockquote>

@@ -35,7 +35,9 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ZetaStitcher 0.3.3 documentation" href="index.html"/> 
+    <link rel="top" title="ZetaStitcher 0.3.3 documentation" href="index.html"/>
+        <link rel="next" title="Module reference" href="module_index.html"/>
+        <link rel="prev" title="Welcome to ZetaStitcher’s documentation!" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -88,16 +90,17 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Tutorial</a><ul>
-<li><a class="reference internal" href="#nominal-stitching">Nominal stitching</a></li>
-<li><a class="reference internal" href="#global-optimal-alignment-and-fusion">Global optimal alignment and fusion</a></li>
-<li><a class="reference internal" href="#accessing-the-fused-volume-programmatically">Accessing the fused volume programmatically</a></li>
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#nominal-stitching">Nominal stitching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#global-optimal-alignment-and-fusion">Global optimal alignment and fusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accessing-the-fused-volume-programmatically">Accessing the fused volume programmatically</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="module_index.html">Module reference</a></li>
 </ul>
-</div>
+
             
           
         </div>
@@ -271,7 +274,7 @@ programmatically. To do so, use the <a class="reference internal" href="generate
 </pre></div>
 </div>
 <p>Axis order is ZYX.</p>
-<p>The <code class="docutils literal"><span class="pre">subvolume</span></code> variable is a <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.13)"><code class="xref py py-class docutils literal"><span class="pre">numpy.ndarray</span></code></a> that you can use as
+<p>The <code class="docutils literal"><span class="pre">subvolume</span></code> variable is a <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.15)"><code class="xref py py-class docutils literal"><span class="pre">numpy.ndarray</span></code></a> that you can use as
 you like. If you want to save the subvolume to a tiff file:</p>
 <div class="highlight-python3"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">skimage.external.tifffile</span> <span class="k">as</span> <span class="nn">tiff</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">tiff</span><span class="o">.</span><span class="n">imsave</span><span class="p">(</span><span class="s1">&#39;subvolume.tiff&#39;</span><span class="p">,</span> <span class="n">subvolume</span><span class="p">)</span>
@@ -287,6 +290,15 @@ you like. If you want to save the subvolume to a tiff file:</p>
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="module_index.html" class="btn btn-neutral float-right" title="Module reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to ZetaStitcher’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
