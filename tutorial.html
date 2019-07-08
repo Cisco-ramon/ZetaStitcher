@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Tutorial &mdash; ZetaStitcher 0.3.3 documentation</title>
+  <title>Tutorial &mdash; ZetaStitcher 0.5.0 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ZetaStitcher 0.3.3 documentation" href="index.html"/>
+    <link rel="top" title="ZetaStitcher 0.5.0 documentation" href="index.html"/>
         <link rel="next" title="Module reference" href="module_index.html"/>
         <link rel="prev" title="Welcome to ZetaStitcher’s documentation!" href="index.html"/> 
 
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                0.3.3
+                0.5.0
               </div>
             
           
@@ -265,7 +265,7 @@ fuse the whole volume with the following command:</p>
 <h2>Accessing the fused volume programmatically<a class="headerlink" href="#accessing-the-fused-volume-programmatically" title="Permalink to this headline">¶</a></h2>
 <p>If the resulting fused volume is too big, such that it is impractical to
 produce the output file, consider accessing portions of your volume
-programmatically. To do so, use the <a class="reference internal" href="generated/zetastitcher.fuser.virtual_fused_volume.html#zetastitcher.fuser.virtual_fused_volume.VirtualFusedVolume" title="zetastitcher.fuser.virtual_fused_volume.VirtualFusedVolume"><code class="xref any py py-class docutils literal"><span class="pre">VirtualFusedVolume</span></code></a> class:</p>
+programmatically. To do so, use the <a class="reference internal" href="generated/zetastitcher.io.virtual_fused_volume.html#zetastitcher.io.virtual_fused_volume.VirtualFusedVolume" title="zetastitcher.io.virtual_fused_volume.VirtualFusedVolume"><code class="xref any py py-class docutils literal"><span class="pre">VirtualFusedVolume</span></code></a> class:</p>
 <div class="highlight-python3"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">zetastitcher</span> <span class="k">import</span> <span class="n">VirtualFusedVolume</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">vfv</span> <span class="o">=</span> <span class="n">VirtualFusedVolume</span><span class="p">(</span><span class="s1">&#39;stitch.yml&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">vfv</span><span class="o">.</span><span class="n">shape</span>
@@ -274,7 +274,7 @@ programmatically. To do so, use the <a class="reference internal" href="generate
 </pre></div>
 </div>
 <p>Axis order is ZYX.</p>
-<p>The <code class="docutils literal"><span class="pre">subvolume</span></code> variable is a <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.15)"><code class="xref py py-class docutils literal"><span class="pre">numpy.ndarray</span></code></a> that you can use as
+<p>The <code class="docutils literal"><span class="pre">subvolume</span></code> variable is a <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.16)"><code class="xref py py-class docutils literal"><span class="pre">numpy.ndarray</span></code></a> that you can use as
 you like. If you want to save the subvolume to a tiff file:</p>
 <div class="highlight-python3"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">skimage.external.tifffile</span> <span class="k">as</span> <span class="nn">tiff</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">tiff</span><span class="o">.</span><span class="n">imsave</span><span class="p">(</span><span class="s1">&#39;subvolume.tiff&#39;</span><span class="p">,</span> <span class="n">subvolume</span><span class="p">)</span>
@@ -327,7 +327,7 @@ you like. If you want to save the subvolume to a tiff file:</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.3.3',
+            VERSION:'0.5.0',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

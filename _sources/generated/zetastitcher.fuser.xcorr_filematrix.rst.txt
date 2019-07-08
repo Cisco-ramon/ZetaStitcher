@@ -1,7 +1,0 @@
-zetastitcher.fuser.xcorr_filematrix module
-==========================================
-
-.. automodule:: zetastitcher.fuser.xcorr_filematrix
-    :members:
-    :undoc-members:
-    :show-inheritance:

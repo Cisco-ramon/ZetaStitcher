@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>zetastitcher.fuser.global_optimization module &mdash; ZetaStitcher 0.3.3 documentation</title>
+  <title>zetastitcher.fuser.global_optimization module &mdash; ZetaStitcher 0.5.0 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="ZetaStitcher 0.3.3 documentation" href="../index.html"/> 
+    <link rel="top" title="ZetaStitcher 0.5.0 documentation" href="../index.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                0.3.3
+                0.5.0
               </div>
             
           
@@ -157,79 +157,17 @@
             
   <div class="section" id="module-zetastitcher.fuser.global_optimization">
 <span id="zetastitcher-fuser-global-optimization-module"></span><h1>zetastitcher.fuser.global_optimization module<a class="headerlink" href="#module-zetastitcher.fuser.global_optimization" title="Permalink to this headline">¶</a></h1>
-<dl class="class">
-<dt id="zetastitcher.fuser.global_optimization.TileDisplacementLeastSquares">
-<em class="property">class </em><code class="descclassname">zetastitcher.fuser.global_optimization.</code><code class="descname">TileDisplacementLeastSquares</code><span class="sig-paren">(</span><em>xcorr_options</em>, <em>frame_shapes</em>, <em>p_ab_1</em>, <em>score_1</em>, <em>p_ab_2</em>, <em>score_2</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.fuser.global_optimization.TileDisplacementLeastSquares" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.fuser.global_optimization.TileDisplacementLeastSquares.fitness" title="zetastitcher.fuser.global_optimization.TileDisplacementLeastSquares.fitness"><code class="xref py py-obj docutils literal"><span class="pre">fitness</span></code></a>(x)</td>
-<td></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.fuser.global_optimization.TileDisplacementLeastSquares.get_bounds" title="zetastitcher.fuser.global_optimization.TileDisplacementLeastSquares.get_bounds"><code class="xref py py-obj docutils literal"><span class="pre">get_bounds</span></code></a>()</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.fuser.global_optimization.TileDisplacementLeastSquares.gradient" title="zetastitcher.fuser.global_optimization.TileDisplacementLeastSquares.gradient"><code class="xref py py-obj docutils literal"><span class="pre">gradient</span></code></a>(x)</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<dl class="method">
-<dt id="zetastitcher.fuser.global_optimization.TileDisplacementLeastSquares.fitness">
-<code class="descname">fitness</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.fuser.global_optimization.TileDisplacementLeastSquares.fitness" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="zetastitcher.fuser.global_optimization.TileDisplacementLeastSquares.get_bounds">
-<code class="descname">get_bounds</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.fuser.global_optimization.TileDisplacementLeastSquares.get_bounds" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="zetastitcher.fuser.global_optimization.TileDisplacementLeastSquares.gradient">
-<code class="descname">gradient</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.fuser.global_optimization.TileDisplacementLeastSquares.gradient" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
 <dl class="function">
 <dt id="zetastitcher.fuser.global_optimization.absolute_position_global_optimization">
-<code class="descclassname">zetastitcher.fuser.global_optimization.</code><code class="descname">absolute_position_global_optimization</code><span class="sig-paren">(</span><em>df</em>, <em>sdf</em>, <em>xcorr_options</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.fuser.global_optimization.absolute_position_global_optimization" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">zetastitcher.fuser.global_optimization.</code><code class="descname">absolute_position_global_optimization</code><span class="sig-paren">(</span><em>df</em>, <em>xcfm</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.fuser.global_optimization.absolute_position_global_optimization" title="Permalink to this definition">¶</a></dt>
 <dd><p>Perform global optimization to adjust tile absolute positions.</p>
 <p>The passed dataframe must come with an initial guess of absolute positions.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>df</strong> : <a class="reference internal" href="zetastitcher.filematrix.html#zetastitcher.filematrix.FileMatrix.data_frame" title="zetastitcher.filematrix.FileMatrix.data_frame"><code class="xref py py-attr docutils literal"><span class="pre">FileMatrix.data_frame</span></code></a></p>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>df</strong> : <a class="reference internal" href="zetastitcher.io.filematrix.html#zetastitcher.io.filematrix.FileMatrix.data_frame" title="zetastitcher.io.filematrix.FileMatrix.data_frame"><code class="xref py py-attr docutils literal"><span class="pre">FileMatrix.data_frame</span></code></a></p>
 <p class="last"><strong>sdf</strong> : <code class="xref py py-attr docutils literal"><span class="pre">FileMatrix.stitch_data_frame</span></code></p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="zetastitcher.fuser.global_optimization.decision_vector_to_tile_coords">
-<code class="descclassname">zetastitcher.fuser.global_optimization.</code><code class="descname">decision_vector_to_tile_coords</code><span class="sig-paren">(</span><em>x</em>, <em>shape</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.fuser.global_optimization.decision_vector_to_tile_coords" title="Permalink to this definition">¶</a></dt>
-<dd><p>Covert decision vector <code class="xref any docutils literal"><span class="pre">x</span></code> to tile coordinates.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>x</strong> : <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.15)"><code class="xref py py-class docutils literal"><span class="pre">numpy.ndarray</span></code></a></p>
-<blockquote>
-<div><p>Decision vector. First row: displacement vector from adjacent left
-tile. Other rows: displacement vector from adjacent top tile.</p>
-</div></blockquote>
-<p><strong>shape</strong> : list</p>
-<blockquote class="last">
-<div><p><code class="xref any docutils literal"><span class="pre">[ysize,</span> <span class="pre">xsize,</span> <span class="pre">3]</span></code> where <a class="reference internal" href="zetastitcher.ffmpeg_wrapper.html#zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.ysize" title="zetastitcher.ffmpeg_wrapper.FFMPEGWrapper.ysize"><code class="xref any py py-attr docutils literal"><span class="pre">ysize</span></code></a> and <a class="reference internal" href="zetastitcher.tiffwrapper.html#zetastitcher.tiffwrapper.TiffWrapper.xsize" title="zetastitcher.tiffwrapper.TiffWrapper.xsize"><code class="xref any py py-attr docutils literal"><span class="pre">xsize</span></code></a> are the mosaic size.</p>
-</div></blockquote>
 </td>
 </tr>
 </tbody>
@@ -273,7 +211,7 @@ tile. Other rows: displacement vector from adjacent top tile.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'0.3.3',
+            VERSION:'0.5.0',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

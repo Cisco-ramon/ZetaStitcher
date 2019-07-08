@@ -1,7 +1,0 @@
-zetastitcher.fuser.overlaps module
-==================================
-
-.. automodule:: zetastitcher.fuser.overlaps
-    :members:
-    :undoc-members:
-    :show-inheritance:

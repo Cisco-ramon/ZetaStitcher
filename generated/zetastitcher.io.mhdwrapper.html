@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>zetastitcher.fuser.fuse_runner module &mdash; ZetaStitcher 0.5.0 documentation</title>
+  <title>zetastitcher.io.mhdwrapper module &mdash; ZetaStitcher 0.5.0 documentation</title>
   
 
   
@@ -136,13 +136,13 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>zetastitcher.fuser.fuse_runner module</li>
+      <li>zetastitcher.io.mhdwrapper module</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/generated/zetastitcher.fuser.fuse_runner.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/generated/zetastitcher.io.mhdwrapper.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -155,11 +155,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="module-zetastitcher.fuser.fuse_runner">
-<span id="zetastitcher-fuser-fuse-runner-module"></span><h1>zetastitcher.fuser.fuse_runner module<a class="headerlink" href="#module-zetastitcher.fuser.fuse_runner" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-zetastitcher.io.mhdwrapper">
+<span id="zetastitcher-io-mhdwrapper-module"></span><h1>zetastitcher.io.mhdwrapper module<a class="headerlink" href="#module-zetastitcher.io.mhdwrapper" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
-<dt id="zetastitcher.fuser.fuse_runner.FuseRunner">
-<em class="property">class </em><code class="descclassname">zetastitcher.fuser.fuse_runner.</code><code class="descname">FuseRunner</code><span class="sig-paren">(</span><em>file_matrix</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.fuser.fuse_runner.FuseRunner" title="Permalink to this definition">¶</a></dt>
+<dt id="zetastitcher.io.mhdwrapper.MHDWrapper">
+<em class="property">class </em><code class="descclassname">zetastitcher.io.mhdwrapper.</code><code class="descname">MHDWrapper</code><span class="sig-paren">(</span><em>file_name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.io.mhdwrapper.MHDWrapper" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p class="rubric">Attributes</p>
 <table border="1" class="longtable docutils">
@@ -168,13 +168,10 @@
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.fuser.fuse_runner.FuseRunner.dtype" title="zetastitcher.fuser.fuse_runner.FuseRunner.dtype"><code class="xref py py-obj docutils literal"><span class="pre">dtype</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.io.mhdwrapper.MHDWrapper.nchannels" title="zetastitcher.io.mhdwrapper.MHDWrapper.nchannels"><code class="xref py py-obj docutils literal"><span class="pre">nchannels</span></code></a></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.fuser.fuse_runner.FuseRunner.is_multichannel" title="zetastitcher.fuser.fuse_runner.FuseRunner.is_multichannel"><code class="xref py py-obj docutils literal"><span class="pre">is_multichannel</span></code></a></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.fuser.fuse_runner.FuseRunner.output_shape" title="zetastitcher.fuser.fuse_runner.FuseRunner.output_shape"><code class="xref py py-obj docutils literal"><span class="pre">output_shape</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.io.mhdwrapper.MHDWrapper.shape" title="zetastitcher.io.mhdwrapper.MHDWrapper.shape"><code class="xref py py-obj docutils literal"><span class="pre">shape</span></code></a></td>
 <td></td>
 </tr>
 </tbody>
@@ -186,35 +183,48 @@
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.fuser.fuse_runner.FuseRunner.run" title="zetastitcher.fuser.fuse_runner.FuseRunner.run"><code class="xref py py-obj docutils literal"><span class="pre">run</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.io.mhdwrapper.MHDWrapper.close" title="zetastitcher.io.mhdwrapper.MHDWrapper.close"><code class="xref py py-obj docutils literal"><span class="pre">close</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.io.mhdwrapper.MHDWrapper.element_type_to_type_fmt" title="zetastitcher.io.mhdwrapper.MHDWrapper.element_type_to_type_fmt"><code class="xref py py-obj docutils literal"><span class="pre">element_type_to_type_fmt</span></code></a>(et)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.io.mhdwrapper.MHDWrapper.open" title="zetastitcher.io.mhdwrapper.MHDWrapper.open"><code class="xref py py-obj docutils literal"><span class="pre">open</span></code></a>([file_name])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.io.mhdwrapper.MHDWrapper.zslice" title="zetastitcher.io.mhdwrapper.MHDWrapper.zslice"><code class="xref py py-obj docutils literal"><span class="pre">zslice</span></code></a>(start_frame[,&nbsp;end_frame,&nbsp;dtype,&nbsp;copy])</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<dl class="attribute">
-<dt id="zetastitcher.fuser.fuse_runner.FuseRunner.dtype">
-<code class="descname">dtype</code><a class="headerlink" href="#zetastitcher.fuser.fuse_runner.FuseRunner.dtype" title="Permalink to this definition">¶</a></dt>
+<dl class="method">
+<dt id="zetastitcher.io.mhdwrapper.MHDWrapper.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.io.mhdwrapper.MHDWrapper.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="staticmethod">
+<dt id="zetastitcher.io.mhdwrapper.MHDWrapper.element_type_to_type_fmt">
+<em class="property">static </em><code class="descname">element_type_to_type_fmt</code><span class="sig-paren">(</span><em>et</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.io.mhdwrapper.MHDWrapper.element_type_to_type_fmt" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="zetastitcher.fuser.fuse_runner.FuseRunner.fm">
-<code class="descname">fm</code><em class="property"> = None</em><a class="headerlink" href="#zetastitcher.fuser.fuse_runner.FuseRunner.fm" title="Permalink to this definition">¶</a></dt>
-<dd><p><code class="xref py py-class docutils literal"><span class="pre">FileMatrix</span></code></p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="zetastitcher.fuser.fuse_runner.FuseRunner.is_multichannel">
-<code class="descname">is_multichannel</code><a class="headerlink" href="#zetastitcher.fuser.fuse_runner.FuseRunner.is_multichannel" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="zetastitcher.fuser.fuse_runner.FuseRunner.output_shape">
-<code class="descname">output_shape</code><a class="headerlink" href="#zetastitcher.fuser.fuse_runner.FuseRunner.output_shape" title="Permalink to this definition">¶</a></dt>
+<dt id="zetastitcher.io.mhdwrapper.MHDWrapper.nchannels">
+<code class="descname">nchannels</code><a class="headerlink" href="#zetastitcher.io.mhdwrapper.MHDWrapper.nchannels" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
-<dt id="zetastitcher.fuser.fuse_runner.FuseRunner.run">
-<code class="descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.fuser.fuse_runner.FuseRunner.run" title="Permalink to this definition">¶</a></dt>
+<dt id="zetastitcher.io.mhdwrapper.MHDWrapper.open">
+<code class="descname">open</code><span class="sig-paren">(</span><em>file_name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.io.mhdwrapper.MHDWrapper.open" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="zetastitcher.io.mhdwrapper.MHDWrapper.shape">
+<code class="descname">shape</code><a class="headerlink" href="#zetastitcher.io.mhdwrapper.MHDWrapper.shape" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.io.mhdwrapper.MHDWrapper.zslice">
+<code class="descname">zslice</code><span class="sig-paren">(</span><em>start_frame</em>, <em>end_frame=None</em>, <em>dtype=None</em>, <em>copy=True</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.io.mhdwrapper.MHDWrapper.zslice" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>

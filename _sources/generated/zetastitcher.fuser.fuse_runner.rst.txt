@@ -1,7 +1,0 @@
-zetastitcher.fuser.fuse_runner module
-=====================================
-
-.. automodule:: zetastitcher.fuser.fuse_runner
-    :members:
-    :undoc-members:
-    :show-inheritance:

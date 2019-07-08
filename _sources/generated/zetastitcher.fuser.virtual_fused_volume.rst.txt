@@ -1,7 +1,0 @@
-zetastitcher.fuser.virtual_fused_volume module
-==============================================
-
-.. automodule:: zetastitcher.fuser.virtual_fused_volume
-    :members:
-    :undoc-members:
-    :show-inheritance:

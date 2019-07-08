@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>zetastitcher.fuser.fuse module &mdash; ZetaStitcher 0.3.3 documentation</title>
+  <title>zetastitcher.fuser.fuse module &mdash; ZetaStitcher 0.5.0 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="ZetaStitcher 0.3.3 documentation" href="../index.html"/> 
+    <link rel="top" title="ZetaStitcher 0.5.0 documentation" href="../index.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                0.3.3
+                0.5.0
               </div>
             
           
@@ -174,19 +174,19 @@
 <blockquote>
 <div><p>A queue containing elements in the form <code class="docutils literal"><span class="pre">[hyperslice,</span> <span class="pre">index,</span> <span class="pre">zfrom,</span>
 <span class="pre">offset_idx,</span> <span class="pre">top_left,</span> <span class="pre">overlaps]</span></code> where <code class="xref any docutils literal"><span class="pre">hyperslice</span></code> is a
-<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.15)"><code class="xref any docutils literal"><span class="pre">numpy.ndarray</span></code></a>, <code class="xref any docutils literal"><span class="pre">index</span></code> and <code class="xref any docutils literal"><span class="pre">zfrom</span></code> are the tile index in the
+<a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.16)"><code class="xref any docutils literal"><span class="pre">numpy.ndarray</span></code></a>, <code class="xref any docutils literal"><span class="pre">index</span></code> and <code class="xref any docutils literal"><span class="pre">zfrom</span></code> are the tile index in the
 pandas dataframe and the starting frame in the original stack (these
 two are used for debugging purposes only), <code class="xref any docutils literal"><span class="pre">offset_idx</span></code> is a
 tuple of <a class="reference external" href="https://docs.python.org/3/library/functions.html#slice" title="(in Python v3.7)"><code class="xref py py-class docutils literal"><span class="pre">slice</span></code></a> objects with the slice offset inside a single
 stack, <code class="xref any docutils literal"><span class="pre">top_left</span></code> is a list specifying the image position in the form
-<code class="docutils literal"><span class="pre">[Z,</span> <span class="pre">Y,</span> <span class="pre">X]</span></code>, <a class="reference internal" href="zetastitcher.fuser.overlaps.html#module-zetastitcher.fuser.overlaps" title="zetastitcher.fuser.overlaps"><code class="xref any py py-mod docutils literal"><span class="pre">overlaps</span></code></a> is a <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v0.23.4)"><code class="xref py py-class docutils literal"><span class="pre">pandas.DataFrame</span></code></a> specifying
+<code class="docutils literal"><span class="pre">[Z,</span> <span class="pre">Y,</span> <span class="pre">X]</span></code>, <a class="reference internal" href="zetastitcher.fuser.overlaps.html#module-zetastitcher.fuser.overlaps" title="zetastitcher.fuser.overlaps"><code class="xref any py py-mod docutils literal"><span class="pre">overlaps</span></code></a> is a <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v0.24.2)"><code class="xref py py-class docutils literal"><span class="pre">pandas.DataFrame</span></code></a> specifying
 overlaps with adjacent tiles.</p>
 </div></blockquote>
 <p><strong>frame_shape</strong> : tuple</p>
 <blockquote>
 <div><p>Shape of a stack plane (XY).</p>
 </div></blockquote>
-<p><strong>dest</strong> : <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.15)"><code class="xref py py-class docutils literal"><span class="pre">numpy.ndarray</span></code></a></p>
+<p><strong>dest</strong> : <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.16)"><code class="xref py py-class docutils literal"><span class="pre">numpy.ndarray</span></code></a></p>
 <blockquote>
 <div><p>Destination array.</p>
 </div></blockquote>
@@ -252,7 +252,7 @@ overlaps with adjacent tiles.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'0.3.3',
+            VERSION:'0.5.0',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

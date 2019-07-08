@@ -1,7 +1,0 @@
-zetastitcher.fuser.global_optimization module
-=============================================
-
-.. automodule:: zetastitcher.fuser.global_optimization
-    :members:
-    :undoc-members:
-    :show-inheritance:

@@ -1,0 +1,534 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>zetastitcher.gaussian_stitcher.qp.mapper module &mdash; ZetaStitcher 0.5.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="ZetaStitcher 0.5.0 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ZetaStitcher
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.5.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../module_index.html">Module reference</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ZetaStitcher</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>zetastitcher.gaussian_stitcher.qp.mapper module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/generated/zetastitcher.gaussian_stitcher.qp.mapper.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-zetastitcher.gaussian_stitcher.qp.mapper">
+<span id="zetastitcher-gaussian-stitcher-qp-mapper-module"></span><h1>zetastitcher.gaussian_stitcher.qp.mapper module<a class="headerlink" href="#module-zetastitcher.gaussian_stitcher.qp.mapper" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.Expression">
+<em class="property">class </em><code class="descclassname">zetastitcher.gaussian_stitcher.qp.mapper.</code><code class="descname">Expression</code><span class="sig-paren">(</span><em>factory</em>, <em>term2coeff=None</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.Expression" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.Expression.add_dotprod" title="zetastitcher.gaussian_stitcher.qp.mapper.Expression.add_dotprod"><code class="xref py py-obj docutils literal"><span class="pre">add_dotprod</span></code></a>(x,&nbsp;z)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.Expression.add_quad" title="zetastitcher.gaussian_stitcher.qp.mapper.Expression.add_quad"><code class="xref py py-obj docutils literal"><span class="pre">add_quad</span></code></a>(vars_v,&nbsp;coeff_mat,&nbsp;vars_w)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.Expression.add_term" title="zetastitcher.gaussian_stitcher.qp.mapper.Expression.add_term"><code class="xref py py-obj docutils literal"><span class="pre">add_term</span></code></a>(term,&nbsp;coeff)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.Expression.one" title="zetastitcher.gaussian_stitcher.qp.mapper.Expression.one"><code class="xref py py-obj docutils literal"><span class="pre">one</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.Expression.order" title="zetastitcher.gaussian_stitcher.qp.mapper.Expression.order"><code class="xref py py-obj docutils literal"><span class="pre">order</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.Expression.zero" title="zetastitcher.gaussian_stitcher.qp.mapper.Expression.zero"><code class="xref py py-obj docutils literal"><span class="pre">zero</span></code></a>()</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.Expression.add_dotprod">
+<code class="descname">add_dotprod</code><span class="sig-paren">(</span><em>x</em>, <em>z</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.Expression.add_dotprod" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.Expression.add_quad">
+<code class="descname">add_quad</code><span class="sig-paren">(</span><em>vars_v</em>, <em>coeff_mat</em>, <em>vars_w</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.Expression.add_quad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.Expression.add_term">
+<code class="descname">add_term</code><span class="sig-paren">(</span><em>term</em>, <em>coeff</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.Expression.add_term" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.Expression.one">
+<code class="descname">one</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.Expression.one" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.Expression.order">
+<code class="descname">order</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.Expression.order" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.Expression.zero">
+<code class="descname">zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.Expression.zero" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder">
+<em class="property">class </em><code class="descclassname">zetastitcher.gaussian_stitcher.qp.mapper.</code><code class="descname">QPBuilder</code><span class="sig-paren">(</span><em>dtype</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.Ab_matrices" title="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.Ab_matrices"><code class="xref py py-obj docutils literal"><span class="pre">Ab_matrices</span></code></a>(variables,&nbsp;var2idx)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.Gh_matrices" title="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.Gh_matrices"><code class="xref py py-obj docutils literal"><span class="pre">Gh_matrices</span></code></a>(variables,&nbsp;var2idx)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.Qp_matrices" title="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.Qp_matrices"><code class="xref py py-obj docutils literal"><span class="pre">Qp_matrices</span></code></a>(variables,&nbsp;var2idx)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.add_variable" title="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.add_variable"><code class="xref py py-obj docutils literal"><span class="pre">add_variable</span></code></a>(v)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.build" title="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.build"><code class="xref py py-obj docutils literal"><span class="pre">build</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.lin_constr2arrays" title="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.lin_constr2arrays"><code class="xref py py-obj docutils literal"><span class="pre">lin_constr2arrays</span></code></a>(constr_list,&nbsp;variables,&nbsp;...)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_equality" title="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_equality"><code class="xref py py-obj docutils literal"><span class="pre">new_equality</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_inequality" title="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_inequality"><code class="xref py py-obj docutils literal"><span class="pre">new_inequality</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_objective" title="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_objective"><code class="xref py py-obj docutils literal"><span class="pre">new_objective</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_variable" title="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_variable"><code class="xref py py-obj docutils literal"><span class="pre">new_variable</span></code></a>(name)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_vector" title="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_vector"><code class="xref py py-obj docutils literal"><span class="pre">new_vector</span></code></a>(name,&nbsp;ndims)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.print_" title="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.print_"><code class="xref py py-obj docutils literal"><span class="pre">print_</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.var2idx" title="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.var2idx"><code class="xref py py-obj docutils literal"><span class="pre">var2idx</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.variables" title="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.variables"><code class="xref py py-obj docutils literal"><span class="pre">variables</span></code></a>()</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.Ab_matrices">
+<code class="descname">Ab_matrices</code><span class="sig-paren">(</span><em>variables</em>, <em>var2idx</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.Ab_matrices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.Gh_matrices">
+<code class="descname">Gh_matrices</code><span class="sig-paren">(</span><em>variables</em>, <em>var2idx</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.Gh_matrices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.Qp_matrices">
+<code class="descname">Qp_matrices</code><span class="sig-paren">(</span><em>variables</em>, <em>var2idx</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.Qp_matrices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.add_variable">
+<code class="descname">add_variable</code><span class="sig-paren">(</span><em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.add_variable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.build">
+<code class="descname">build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.build" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.lin_constr2arrays">
+<code class="descname">lin_constr2arrays</code><span class="sig-paren">(</span><em>constr_list</em>, <em>variables</em>, <em>var2idx</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.lin_constr2arrays" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_equality">
+<code class="descname">new_equality</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_equality" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_inequality">
+<code class="descname">new_inequality</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_inequality" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_objective">
+<code class="descname">new_objective</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_objective" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_variable">
+<code class="descname">new_variable</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_variable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_vector">
+<code class="descname">new_vector</code><span class="sig-paren">(</span><em>name</em>, <em>ndims</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.new_vector" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.print_">
+<code class="descname">print_</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.print_" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.var2idx">
+<code class="descname">var2idx</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.var2idx" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.variables">
+<code class="descname">variables</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.QPBuilder.variables" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices">
+<em class="property">class </em><code class="descclassname">zetastitcher.gaussian_stitcher.qp.mapper.</code><code class="descname">SolverMatrices</code><span class="sig-paren">(</span><em>P</em>, <em>q</em>, <em>G</em>, <em>h</em>, <em>A</em>, <em>b</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.7)"><code class="xref py py-class docutils literal"><span class="pre">tuple</span></code></a></p>
+<p class="rubric">Attributes</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.A" title="zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.A"><code class="xref py py-obj docutils literal"><span class="pre">A</span></code></a></td>
+<td>Alias for field number 4</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.G" title="zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.G"><code class="xref py py-obj docutils literal"><span class="pre">G</span></code></a></td>
+<td>Alias for field number 2</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.P" title="zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.P"><code class="xref py py-obj docutils literal"><span class="pre">P</span></code></a></td>
+<td>Alias for field number 0</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.b" title="zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.b"><code class="xref py py-obj docutils literal"><span class="pre">b</span></code></a></td>
+<td>Alias for field number 5</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.h" title="zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.h"><code class="xref py py-obj docutils literal"><span class="pre">h</span></code></a></td>
+<td>Alias for field number 3</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.q" title="zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.q"><code class="xref py py-obj docutils literal"><span class="pre">q</span></code></a></td>
+<td>Alias for field number 1</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal"><span class="pre">count</span></code>(...)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal"><span class="pre">index</span></code>((value,&nbsp;[start,&nbsp;...)</td>
+<td>Raises ValueError if the value is not present.</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.A">
+<code class="descname">A</code><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.A" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 4</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.G">
+<code class="descname">G</code><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.G" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.P">
+<code class="descname">P</code><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.P" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.b">
+<code class="descname">b</code><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.b" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 5</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.h">
+<code class="descname">h</code><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.h" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 3</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.q">
+<code class="descname">q</code><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.SolverMatrices.q" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.Term">
+<em class="property">class </em><code class="descclassname">zetastitcher.gaussian_stitcher.qp.mapper.</code><code class="descname">Term</code><span class="sig-paren">(</span><em>variables</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.Term" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.gaussian_stitcher.qp.mapper.Term.order" title="zetastitcher.gaussian_stitcher.qp.mapper.Term.order"><code class="xref py py-obj docutils literal"><span class="pre">order</span></code></a>()</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.Term.order">
+<code class="descname">order</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.Term.order" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.Variable">
+<em class="property">class </em><code class="descclassname">zetastitcher.gaussian_stitcher.qp.mapper.</code><code class="descname">Variable</code><span class="sig-paren">(</span><em>factory</em>, <em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.Variable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="zetastitcher.gaussian_stitcher.qp.mapper.add_sv">
+<code class="descclassname">zetastitcher.gaussian_stitcher.qp.mapper.</code><code class="descname">add_sv</code><span class="sig-paren">(</span><em>d1</em>, <em>d2</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.gaussian_stitcher.qp.mapper.add_sv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Giacomo Mazzamuto.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.5.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://docs.python.org/3/_static/copybutton.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

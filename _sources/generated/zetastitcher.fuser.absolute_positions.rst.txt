@@ -1,7 +1,0 @@
-zetastitcher.fuser.absolute_positions module
-============================================
-
-.. automodule:: zetastitcher.fuser.absolute_positions
-    :members:
-    :undoc-members:
-    :show-inheritance:

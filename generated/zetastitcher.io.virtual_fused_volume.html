@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>zetastitcher.fuser.virtual_fused_volume module &mdash; ZetaStitcher 0.3.3 documentation</title>
+  <title>zetastitcher.io.virtual_fused_volume module &mdash; ZetaStitcher 0.5.0 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="ZetaStitcher 0.3.3 documentation" href="../index.html"/> 
+    <link rel="top" title="ZetaStitcher 0.5.0 documentation" href="../index.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                0.3.3
+                0.5.0
               </div>
             
           
@@ -136,13 +136,13 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>zetastitcher.fuser.virtual_fused_volume module</li>
+      <li>zetastitcher.io.virtual_fused_volume module</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/generated/zetastitcher.fuser.virtual_fused_volume.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/generated/zetastitcher.io.virtual_fused_volume.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -155,12 +155,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="module-zetastitcher.fuser.virtual_fused_volume">
-<span id="zetastitcher-fuser-virtual-fused-volume-module"></span><h1>zetastitcher.fuser.virtual_fused_volume module<a class="headerlink" href="#module-zetastitcher.fuser.virtual_fused_volume" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-zetastitcher.io.virtual_fused_volume">
+<span id="zetastitcher-io-virtual-fused-volume-module"></span><h1>zetastitcher.io.virtual_fused_volume module<a class="headerlink" href="#module-zetastitcher.io.virtual_fused_volume" title="Permalink to this headline">¶</a></h1>
 <p>API to query an arbitrary region in the stitched volume.</p>
 <dl class="class">
-<dt id="zetastitcher.fuser.virtual_fused_volume.VirtualFusedVolume">
-<em class="property">class </em><code class="descclassname">zetastitcher.fuser.virtual_fused_volume.</code><code class="descname">VirtualFusedVolume</code><span class="sig-paren">(</span><em>file_or_matrix</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.fuser.virtual_fused_volume.VirtualFusedVolume" title="Permalink to this definition">¶</a></dt>
+<dt id="zetastitcher.io.virtual_fused_volume.VirtualFusedVolume">
+<em class="property">class </em><code class="descclassname">zetastitcher.io.virtual_fused_volume.</code><code class="descname">VirtualFusedVolume</code><span class="sig-paren">(</span><em>file_or_matrix</em><span class="sig-paren">)</span><a class="headerlink" href="#zetastitcher.io.virtual_fused_volume.VirtualFusedVolume" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
 <p>An API to query arbitrary regions in the stitched volume.</p>
 <p>Example usage:</p>
@@ -180,24 +180,24 @@
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.fuser.virtual_fused_volume.VirtualFusedVolume.overlay_debug_enabled" title="zetastitcher.fuser.virtual_fused_volume.VirtualFusedVolume.overlay_debug_enabled"><code class="xref py py-obj docutils literal"><span class="pre">overlay_debug_enabled</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#zetastitcher.io.virtual_fused_volume.VirtualFusedVolume.overlay_debug_enabled" title="zetastitcher.io.virtual_fused_volume.VirtualFusedVolume.overlay_debug_enabled"><code class="xref py py-obj docutils literal"><span class="pre">overlay_debug_enabled</span></code></a></td>
 <td>Whether to overlay debug information (tile edges and numbers).</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.fuser.virtual_fused_volume.VirtualFusedVolume.shape" title="zetastitcher.fuser.virtual_fused_volume.VirtualFusedVolume.shape"><code class="xref py py-obj docutils literal"><span class="pre">shape</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#zetastitcher.io.virtual_fused_volume.VirtualFusedVolume.shape" title="zetastitcher.io.virtual_fused_volume.VirtualFusedVolume.shape"><code class="xref py py-obj docutils literal"><span class="pre">shape</span></code></a></td>
 <td>Shape of the whole stitched volume.</td>
 </tr>
 </tbody>
 </table>
 <dl class="attribute">
-<dt id="zetastitcher.fuser.virtual_fused_volume.VirtualFusedVolume.overlay_debug_enabled">
-<code class="descname">overlay_debug_enabled</code><a class="headerlink" href="#zetastitcher.fuser.virtual_fused_volume.VirtualFusedVolume.overlay_debug_enabled" title="Permalink to this definition">¶</a></dt>
+<dt id="zetastitcher.io.virtual_fused_volume.VirtualFusedVolume.overlay_debug_enabled">
+<code class="descname">overlay_debug_enabled</code><a class="headerlink" href="#zetastitcher.io.virtual_fused_volume.VirtualFusedVolume.overlay_debug_enabled" title="Permalink to this definition">¶</a></dt>
 <dd><p>Whether to overlay debug information (tile edges and numbers).</p>
 <p>Defaults to <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.7)"><code class="xref any docutils literal"><span class="pre">False</span></code></a>.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="zetastitcher.fuser.virtual_fused_volume.VirtualFusedVolume.shape">
-<code class="descname">shape</code><a class="headerlink" href="#zetastitcher.fuser.virtual_fused_volume.VirtualFusedVolume.shape" title="Permalink to this definition">¶</a></dt>
+<dt id="zetastitcher.io.virtual_fused_volume.VirtualFusedVolume.shape">
+<code class="descname">shape</code><a class="headerlink" href="#zetastitcher.io.virtual_fused_volume.VirtualFusedVolume.shape" title="Permalink to this definition">¶</a></dt>
 <dd><p>Shape of the whole stitched volume.</p>
 <p>Axis order is ZCYX.</p>
 </dd></dl>
@@ -241,7 +241,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'0.3.3',
+            VERSION:'0.5.0',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
